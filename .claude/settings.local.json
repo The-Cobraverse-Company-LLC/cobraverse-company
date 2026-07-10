@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/timothyfiola/vs_code_projects/cobraverse-company log --oneline -5)",
+      "Bash(python3 -)",
+      "Bash(node --check script.js)"
+    ]
+  }
+}

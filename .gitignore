@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+*.swp
+
+# Node (only if you later add tooling)
+node_modules/
