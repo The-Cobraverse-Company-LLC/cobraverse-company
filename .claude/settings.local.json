@@ -3,7 +3,11 @@
     "allow": [
       "Bash(git -C /Users/timothyfiola/vs_code_projects/cobraverse-company log --oneline -5)",
       "Bash(python3 -)",
-      "Bash(node --check script.js)"
+      "Bash(node --check script.js)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" https://lasercobras.com/ -o /tmp/lasercobras.html -w \"HTTP %{http_code}, %{size_download} bytes\\\\n\")",
+      "Read(//tmp/**)",
+      "Read(//private/tmp/**)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" https://lasercobras.com/style.css -o /tmp/lasercobras.css -w \"style.css: HTTP %{http_code}, %{size_download} bytes\\\\n\")"
     ]
   }
 }

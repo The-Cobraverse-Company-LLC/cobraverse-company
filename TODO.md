@@ -1,0 +1,1 @@
+1.  make the capcha work (claude code said something, but i don't recall what it was i had to set up)
