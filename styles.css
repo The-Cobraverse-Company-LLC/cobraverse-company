@@ -305,7 +305,6 @@ img { max-width: 100%; display: block; }
 }
 .contact-form input:focus,
 .contact-form textarea:focus { outline: none; border-color: var(--red); box-shadow: 0 0 12px rgba(255,0,60,.4); }
-.contact-form .h-captcha { display: flex; justify-content: center; min-height: 78px; }
 .contact-form .btn { justify-self: center; margin-top: .3rem; }
 .form-status { text-align: center; font-size: .95rem; margin-top: .2rem; min-height: 1.2em; letter-spacing: .5px; }
 .form-status.ok { color: var(--yellow); text-shadow: var(--glow-yel); }

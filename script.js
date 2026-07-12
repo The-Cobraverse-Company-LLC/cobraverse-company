@@ -65,14 +65,6 @@ if (contactForm) {
       return;
     }
 
-    // Require a solved captcha. hCaptcha injects an "h-captcha-response"
-    // field once the challenge is passed; empty means it's unsolved.
-    if (!data['h-captcha-response']) {
-      status.textContent = 'Please complete the captcha below.';
-      status.className = 'form-status err';
-      return;
-    }
-
     const originalLabel = btn.textContent;
     btn.disabled = true;
     btn.textContent = 'Sending…';
@@ -103,8 +95,6 @@ if (contactForm) {
     } finally {
       btn.disabled = false;
       btn.textContent = originalLabel;
-      // Captcha tokens are single-use — reset so the widget is ready again.
-      if (window.hcaptcha) window.hcaptcha.reset();
     }
   });
 }

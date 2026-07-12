@@ -15,8 +15,6 @@
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
-  <!-- hCaptcha (spam protection for the contact form) -->
-  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 </head>
 <body>
   <!-- ===== NAV ===== -->
@@ -263,7 +261,7 @@
         without exposing your email address on the page.
       -->
       <form class="contact-form" id="contact-form" data-endpoint="https://api.web3forms.com/submit">
-        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+        <input type="hidden" name="access_key" value="da7d3cef-fcfe-419f-ab47-0f687cd236f9" />
         <input type="hidden" name="subject" value="New message from cobraverse.net" />
         <input type="hidden" name="from_name" value="Cobraverse Website" />
         <!-- Spam honeypot: real people leave this empty -->
@@ -283,12 +281,6 @@
           <span>Message</span>
           <textarea name="message" rows="5" placeholder="What's on your mind?" required></textarea>
         </label>
-        <!--
-          hCaptcha widget. The sitekey below is Web3Forms' shared key, so no
-          hCaptcha account is needed. If you'd rather use your own hCaptcha
-          account, swap in your sitekey from https://dashboard.hcaptcha.com.
-        -->
-        <div class="h-captcha" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2" data-theme="dark"></div>
         <button type="submit" class="btn btn-primary">Send Message</button>
         <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
       </form>

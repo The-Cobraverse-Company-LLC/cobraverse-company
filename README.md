@@ -73,10 +73,11 @@ site.
 3. Open `index.html`, find `YOUR_WEB3FORMS_ACCESS_KEY`, and replace it with
    your key. Done — submissions now arrive in your inbox.
 
-The form is protected by **hCaptcha** (spam prevention). It uses Web3Forms'
-shared hCaptcha sitekey, so no extra account is needed. To use your own
-hCaptcha account, replace the `data-sitekey` value in `index.html` with your
-sitekey from https://dashboard.hcaptcha.com.
+The form is protected by a hidden **honeypot** field plus Web3Forms' built-in
+**Advanced Spam Protection** (both included on the free plan). No captcha is
+used, so submitting shows an inline "Message sent" confirmation without leaving
+the page. (Web3Forms' free plan also supports hCaptcha if you ever want a
+visible challenge — it requires their client-script integration.)
 
 Prefer Formspree instead? Create a form at https://formspree.io, then in
 `index.html` change the form's `data-endpoint` to your Formspree URL
