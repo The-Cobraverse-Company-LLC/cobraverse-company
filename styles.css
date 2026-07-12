@@ -133,7 +133,8 @@ img { max-width: 100%; display: block; }
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 120px clamp(1rem, 4vw, 2.5rem) 60px;
+  /* On wide screens, grow side padding so hero content stays in a centered band */
+  padding: 120px max(clamp(1rem, 4vw, 2.5rem), calc((100% - 1600px) / 2)) 60px;
   overflow: hidden;
 }
 .hero-grid {
@@ -155,11 +156,12 @@ img { max-width: 100%; display: block; }
 .hero::after {
   /* Hero cobra art — drop your image at assets/hero.png (transparent PNG best) */
   content: "";
-  position: absolute; right: clamp(-6rem, -2vw, 0px); bottom: 0;
-  width: min(52vw, 720px); height: 90%;
+  position: absolute; top: 0; bottom: 0;
+  right: max(0px, calc((100% - 1600px) / 2));
+  width: min(48vw, 780px);
   background: url('assets/hero.png') no-repeat center right / contain;
   filter: drop-shadow(0 0 40px rgba(255,0,60,.55));
-  pointer-events: none; opacity: .96;
+  pointer-events: none; opacity: .97;
   animation: pulse 4s infinite ease-in-out;
 }
 @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.03); } }
@@ -217,13 +219,18 @@ img { max-width: 100%; display: block; }
   transform: translateY(-6px);
   box-shadow: inset 0 0 26px color-mix(in srgb, var(--accent) 45%, transparent), 0 0 26px color-mix(in srgb, var(--accent) 45%, transparent);
 }
-.faction-icon {
-  width: 60px; height: 60px; display: grid; place-items: center;
-  border: 2px solid var(--accent); color: var(--accent);
-  box-shadow: 0 0 12px color-mix(in srgb, var(--accent) 45%, transparent);
-  margin-bottom: 1.2rem;
+.faction .faction-media {
+  margin: -2rem -1.5rem 1.3rem;
+  aspect-ratio: 4 / 3;
+  background-size: contain;   /* fit whole cobra, never crop */
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid var(--accent);
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--accent) 22%, transparent);
 }
-.faction-icon svg { width: 34px; height: 34px; filter: drop-shadow(0 0 8px var(--accent)); }
+/* mecha.jpg has a baked-in black background; make its banner black too so the
+   letterbox seam disappears (the transparent cobras don't need this). */
+.faction .faction-media.media-mecha { background-color: #000; background-image: url('assets/mecha.jpg'); }
 .faction h3 { margin-bottom: .6rem; font-size: 1.25rem; letter-spacing: 2px; color: var(--accent); text-shadow: 0 0 10px color-mix(in srgb, var(--accent) 60%, transparent); }
 .faction p { margin-bottom: 1.2rem; color: var(--muted); font-size: .98rem; }
 .faction-tag {
@@ -245,7 +252,7 @@ img { max-width: 100%; display: block; }
 .merch .card-media { aspect-ratio: 1 / 1; }
 /* Faction-tinted image slots (gradient fallback until real images are added) */
 .media-laser { background-image: url('assets/laser.png'), linear-gradient(135deg,#ff003c33,#7a001c11); background-color:#1a0008; }
-.media-mecha { background-image: url('assets/mecha.png'), linear-gradient(135deg,#c8ced833,#5a606c11); background-color:#141414; }
+.media-mecha { background-image: url('assets/mecha.jpg'), linear-gradient(135deg,#c8ced833,#5a606c11); background-color:#141414; }
 .media-ice   { background-image: url('assets/ice.png'),   linear-gradient(135deg,#7ce7ff33,#1b4a6611); background-color:#08141c; }
 .media-fire  { background-image: url('assets/fire.png'),  linear-gradient(135deg,#ff8a3d33,#ff2d2d11); background-color:#1e0f0c; }
 .media-laser, .media-mecha, .media-ice, .media-fire { background-repeat:no-repeat; background-position:center; background-size:cover; }

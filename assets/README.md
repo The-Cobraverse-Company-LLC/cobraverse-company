@@ -4,14 +4,19 @@ Drop your cobra images here using these **exact filenames** and the site
 picks them up automatically. Until a file exists, a themed gradient shows
 as a fallback (so the page never looks broken).
 
-| Filename          | Where it appears                          | Suggested art                          |
+| Filename          | Where it appears                          | Status                                 |
 |-------------------|-------------------------------------------|----------------------------------------|
-| `hero.png`        | Big hero image (right side, dark bg)      | The laser-vs-mecha battle scene. **Use a transparent PNG** so it blends into the background. |
-| `laser.png`       | Any "laser" card (games/videos/merch)     | Red laser cobra                        |
-| `mecha.png`       | Any "mecha" card                          | Chrome mecha cobra                     |
-| `ice.png`         | Any "ice" card                            | Ice cobra                              |
-| `fire.png`        | Any "fire" card                           | Fire cobra                             |
-| `favicon.svg`     | Browser tab icon (already provided)       | —                                      |
+| `hero.png`        | Big hero image (right side, dark bg)      | ✅ Added (transparent battle scene)    |
+| `laser.png`       | Laser faction card + any "laser" card     | ✅ Added (red laser cobra, transparent)|
+| `mecha.jpg`       | Mecha faction card + any "mecha" card     | ✅ Added (chrome mecha cobra)          |
+| `ice.jpg`         | Ice faction card + any "ice" card         | ✅ Added (ice cobra)                   |
+| `fire.jpg`        | Fire faction card + any "fire" card       | ✅ Added (fire cobra)                  |
+| `favicon.svg`     | Browser tab icon                          | ✅ Provided                            |
+
+Note: `hero` and `laser` are transparent `.png` (they blend into the dark
+background); `ice`, `fire`, and `mecha` are `.jpg` (optimized to ~300 KB each).
+To swap any image, replace the file (keeping the same name) or update the
+matching `url(...)` in `styles.css`.
 
 ## Tips
 - **hero.png**: transparent background PNG looks best. Keep it roughly

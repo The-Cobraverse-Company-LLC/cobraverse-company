@@ -7,7 +7,17 @@
       "Bash(curl -sL -A \"Mozilla/5.0\" https://lasercobras.com/ -o /tmp/lasercobras.html -w \"HTTP %{http_code}, %{size_download} bytes\\\\n\")",
       "Read(//tmp/**)",
       "Read(//private/tmp/**)",
-      "Bash(curl -sL -A \"Mozilla/5.0\" https://lasercobras.com/style.css -o /tmp/lasercobras.css -w \"style.css: HTTP %{http_code}, %{size_download} bytes\\\\n\")"
+      "Bash(curl -sL -A \"Mozilla/5.0\" https://lasercobras.com/style.css -o /tmp/lasercobras.css -w \"style.css: HTTP %{http_code}, %{size_download} bytes\\\\n\")",
+      "Read(//Users/timothyfiola/Documents/Converted battle_for_cobraxis.cmproj/media/**)",
+      "Bash(sips -s format png -Z 1400 \"1742339504.713709/IMG_4461.heic\" --out /tmp/preview_4461.png)",
+      "Bash(sips -s format png -Z 1400 \"1742339504.713246/IMG_4908.heic\" --out /tmp/preview_4908.png)",
+      "Bash(sips -s format png -Z 1200 __TRACKED_VAR__/1742339504.713709/IMG_4461.heic --out assets/ice.png)",
+      "Bash(sips -s format png -Z 1200 __TRACKED_VAR__/1742339504.713246/IMG_4908.heic --out assets/fire.png)",
+      "Bash(sips -s format png -Z 1200 __TRACKED_VAR__/1742519903.845213/Gemini_Generated_Image_5gp3545gp3545gp3.jpeg --out assets/mecha.png)",
+      "Bash(command -v pngquant)",
+      "Bash(pngquant --force --quality=65-85 --output assets/fire.png assets/fire.png)",
+      "Bash(python3 -c \"import PIL; print\\('Pillow', PIL.__version__\\)\")",
+      "Bash(sips -g pixelWidth -g pixelHeight assets/hero.png)"
     ]
   }
 }
