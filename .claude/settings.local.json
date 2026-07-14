@@ -17,7 +17,9 @@
       "Bash(command -v pngquant)",
       "Bash(pngquant --force --quality=65-85 --output assets/fire.png assets/fire.png)",
       "Bash(python3 -c \"import PIL; print\\('Pillow', PIL.__version__\\)\")",
-      "Bash(sips -g pixelWidth -g pixelHeight assets/hero.png)"
+      "Bash(sips -g pixelWidth -g pixelHeight assets/hero.png)",
+      "Read(//Users/timothyfiola/**)",
+      "Read(//Users/timothyfiola/vs_code_projects/**)"
     ]
   }
 }
