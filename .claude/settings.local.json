@@ -19,7 +19,19 @@
       "Bash(python3 -c \"import PIL; print\\('Pillow', PIL.__version__\\)\")",
       "Bash(sips -g pixelWidth -g pixelHeight assets/hero.png)",
       "Read(//Users/timothyfiola/**)",
-      "Read(//Users/timothyfiola/vs_code_projects/**)"
+      "Read(//Users/timothyfiola/vs_code_projects/**)",
+      "Bash(dig +short cobraverse.net A)",
+      "Bash(dig +short cobraverse.net AAAA)",
+      "Bash(dig +short www.cobraverse.net CNAME)",
+      "Bash(dig +short www.cobraverse.net A)",
+      "Bash(dig +short cobraverse.net CAA)",
+      "Bash(curl -s \"https://dns.google/resolve?name=cobraverse.net&type=A\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\(a.get\\('data'\\)\\) for a in d.get\\('Answer',[]\\)] or print\\('\\(none\\)'\\)\")",
+      "Bash(curl -s \"https://dns.google/resolve?name=cobraverse.net&type=AAAA\")",
+      "Bash(curl -s \"https://dns.google/resolve?name=www.cobraverse.net&type=CNAME\")",
+      "Bash(curl -s \"https://dns.google/resolve?name=cobraverse.net&type=CAA\")",
+      "Bash(openssl s_client -connect cobraverse.net:443 -servername cobraverse.net)",
+      "Bash(openssl x509 *)"
     ]
   }
 }
