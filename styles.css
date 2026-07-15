@@ -208,6 +208,8 @@ img { max-width: 100%; display: block; }
 .factions { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.4rem; }
 .faction {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding: 2rem 1.5rem;
   border: 2px solid var(--accent);
   background: var(--bg-3);
@@ -231,10 +233,14 @@ img { max-width: 100%; display: block; }
 /* mecha.jpg has a baked-in black background; make its banner black too so the
    letterbox seam disappears (the transparent cobras don't need this). */
 .faction .faction-media.media-mecha { background-color: #000; background-image: url('assets/mecha.jpg'); }
-.faction h3 { margin-bottom: .6rem; font-size: 1.25rem; letter-spacing: 2px; color: var(--accent); text-shadow: 0 0 10px color-mix(in srgb, var(--accent) 60%, transparent); }
+/* laser.png carries extra transparent padding — scale it up to fill the banner. */
+.faction .faction-media.media-laser { background-size: auto 132%; }
+.faction h3 { margin-bottom: .5rem; font-size: 1.25rem; letter-spacing: 2px; color: var(--accent); text-shadow: 0 0 10px color-mix(in srgb, var(--accent) 60%, transparent); }
+.faction-lead { margin-bottom: .7rem; color: var(--text); font-style: italic; font-weight: 600; font-size: .92rem; letter-spacing: .3px; }
 .faction p { margin-bottom: 1.2rem; color: var(--muted); font-size: .98rem; }
 .faction-tag {
-  display: inline-block; font-size: .68rem; letter-spacing: 2px; text-transform: uppercase;
+  margin-top: auto; align-self: flex-start;
+  font-size: .68rem; letter-spacing: 2px; text-transform: uppercase;
   color: var(--text); padding: .3rem .7rem; border: 1px solid var(--accent);
 }
 
