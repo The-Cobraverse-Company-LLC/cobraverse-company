@@ -31,7 +31,8 @@
       "Bash(curl -s \"https://dns.google/resolve?name=www.cobraverse.net&type=CNAME\")",
       "Bash(curl -s \"https://dns.google/resolve?name=cobraverse.net&type=CAA\")",
       "Bash(openssl s_client -connect cobraverse.net:443 -servername cobraverse.net)",
-      "Bash(openssl x509 *)"
+      "Bash(openssl x509 *)",
+      "Bash(git rev-list *)"
     ]
   }
 }
