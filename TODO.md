@@ -46,28 +46,33 @@ Both pages are the public promise — every item below keeps reality matching it
     had no game-shutdown carve-out.
 
 --- B. CONTACT INFO GAP (COPPA 16 CFR 312.4(d)(1): name, ADDRESS, PHONE, EMAIL) ---
-8.  CLOSED 2026-09-05 - No published address / phone / email needed. The site
-    already has a working contact form (index.html#contact, Web3Forms, key
-    set, honeypot on), and every legal page routes requests to it. COPPA's
-    "name, address, telephone number, and email address" list (16 CFR
-    312.4(d)(1)) binds CHILD-DIRECTED services only, and ours is general
-    audience; CCPA's "two or more methods" rule applies to businesses over
-    $25M revenue / 100k consumers, not us. A street address was only ever
-    driven by Apple's EU trader disclosure, and EU/EEA/UK/CH are excluded
-    (item 18). Nothing to do.
-    REOPEN ONLY IF: (a) counsel says the game reads as child-directed, or
-    (b) the EU is added later — then Apple publishes address/phone/email on
-    EU store pages and a PO Box may be rejected, so a virtual mailbox
-    (iPostal1, Anytime Mailbox, PostScan, UPS Store; ~$10-30/mo; notarized
-    USPS Form 1583; NOT valid as the CO registered-agent address) plus a
-    privacy@cobraverse.net forwarder is the cheap path.
-    [ ] OPERATIONAL (do this regardless): the contact form is now the SINGLE
-        channel for support, privacy/deletion requests, and parent inquiries,
-        and it depends on a free third party. Send yourself a test submission
-        after any deploy that touches index.html, and again quarterly. If
-        Web3Forms ever fails silently the published policy promises a channel
-        that does not work. Consider a backup (Formspree endpoint is already
-        supported by script.js — see README).
+8.  DONE 2026-09-05 - privacy@cobraverse.net published alongside the contact
+    form on privacy.html (summary bullet, §9 parents, §13), terms.html §23,
+    and support.html (callout + Company information). Company name + "Colorado,
+    United States" now appear in all three contact blocks.
+    [ ] CREATE THE ALIAS IN ZOHO (nothing works until this exists): Zoho Mail
+        Admin Console > Users > (your user) > Mailbox Settings > Email Alias >
+        Add > username "privacy", domain cobraverse.net. It is an ALIAS on the
+        existing admin@ mailbox, NOT a new user — the Mail Lite plan's 1 used /
+        0 available license count is users, not addresses, so it costs nothing.
+        Do NOT tick "set as Mailbox Address" (that renames the primary address).
+        It will show in the From dropdown so you can reply as privacy@.
+    [ ] Send a test message to privacy@cobraverse.net once created, and again
+        after any deploy that touches these pages.
+    No postal address or phone is published. COPPA's "name, address, telephone
+    number, and email address" list (16 CFR 312.4(d)(1)) binds CHILD-DIRECTED
+    services only and ours is general audience; CCPA's "two or more methods"
+    rule applies above $25M revenue / 100k consumers. A street address was only
+    ever driven by Apple's EU trader disclosure, and EU/EEA/UK/CH are excluded
+    (item 18). If the EU is ever added, that disclosure returns and a PO Box may
+    be rejected — a virtual mailbox (iPostal1, Anytime Mailbox, PostScan, UPS
+    Store; ~$10-30/mo; notarized USPS Form 1583; NOT valid as the CO
+    registered-agent address) is the cheap path.
+    NOTE: the alias is disposable — if it gets scraped and spammed, delete it,
+    create a different one, and update the three pages. That disposability is
+    why publishing it is lower-risk than the address removed in 455db8a.
+    Backup channel if Web3Forms ever fails: script.js already supports a
+    Formspree endpoint (see README).
 
 --- C. BEFORE LAUNCH (this repo) ---
 9.  Counsel review of privacy.html + terms.html (README already says so).
