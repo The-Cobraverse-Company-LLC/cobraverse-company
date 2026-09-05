@@ -28,10 +28,12 @@ Both pages are the public promise — every item below keeps reality matching it
         decide G vs PG for real. If the cap changes, privacy.html summary +
         §2/§3/§9 and terms.html §6 must change with it (30-day notice if the
         game is live).
-5.  DECIDE - No arbitration clause (terms.html §21: Colorado courts, 30-day
-    informal resolution first, individual claims where permitted). Reasoning:
-    arbitration means the business pays AAA/JAMS fees and needs an opt-out
-    window; a class waiver without arbitration is shaky. Confirm or ask counsel.
+5.  DONE 2026-09-05 - No arbitration clause, confirmed. terms.html §21 stays:
+    Colorado law, state/federal courts in Colorado, 30-day informal resolution
+    first, individual (non-class) claims where the law permits, EU/UK consumer
+    protections preserved. Reason: arbitration would put AAA/JAMS fees and an
+    opt-out-window mechanism on the business — a burden for a solo LLC. Counsel
+    may still comment, but no change is planned.
 6.  DECIDE - Fan content / streaming permitted incl. platform monetization
     (YouTube/Twitch ads), no selling products with the IP (terms.html §11).
     Standard indie stance. Tighten if you want approval-only.
