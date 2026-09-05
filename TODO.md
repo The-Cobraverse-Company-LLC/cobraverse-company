@@ -34,9 +34,11 @@ Both pages are the public promise — every item below keeps reality matching it
     protections preserved. Reason: arbitration would put AAA/JAMS fees and an
     opt-out-window mechanism on the business — a burden for a solo LLC. Counsel
     may still comment, but no change is planned.
-6.  DECIDE - Fan content / streaming permitted incl. platform monetization
-    (YouTube/Twitch ads), no selling products with the IP (terms.html §11).
-    Standard indie stance. Tighten if you want approval-only.
+6.  DONE 2026-09-05 - Fan content / streaming permission kept as written
+    (terms.html §11): non-commercial fan art, videos, streams, reviews of the
+    Game, our videos, and our characters, incl. platform monetization
+    (YouTube/Twitch); no selling products or advertising with the IP; no
+    implied endorsement; credit where practical; revocable per-case.
 7.  DONE 2026-09-05 - terms.html §5 now uses the industry-standard clause: we
     may modify/replace/retire Virtual Items at any time, reasonable notice where
     practical, no ownership interest, no compensation (except where law
