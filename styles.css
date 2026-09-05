@@ -397,6 +397,13 @@ img { max-width: 100%; display: block; }
   padding: 1.4rem 1.6rem; margin: 2rem 0;
 }
 .legal .callout p:last-child { margin-bottom: 0; }
+.legal .summary {
+  border: 1px solid var(--line); border-left: 3px solid var(--yellow);
+  background: var(--surface); padding: 1.4rem 1.6rem; margin: 2rem 0;
+}
+.legal .summary h2 { margin: 0 0 .9rem; font-size: 1.1rem; }
+.legal .summary ul { margin-bottom: .9rem; }
+.legal .summary p:last-child { margin-bottom: 0; font-size: .85rem; color: var(--muted-2); }
 .legal .disclaimer { color: var(--muted-2); font-size: .85rem; font-style: italic; border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1.5rem; }
 .back-link { display: inline-block; margin-bottom: 2rem; color: var(--muted); font-size: .8rem; letter-spacing: 2px; text-transform: uppercase; }
 .back-link:hover { color: var(--red); text-shadow: var(--glow-red); }

@@ -28,11 +28,18 @@ Apple Developer Program and publishing apps:
   section and every page footer. Make sure this exactly matches the name on your
   D-U-N-S record and LLC registration.
 - **Privacy Policy** — `privacy.html` → use `https://cobraverse.net/privacy.html`
-  as the app's Privacy Policy URL (required for every app).
+  as the app's Privacy Policy URL (required for every app). Audience posture:
+  general audience 13+, not child-directed, non-personalized + general-audience
+  ("G") ads for everyone. The game config must match what the policy promises —
+  see the ship checklist in the `laser_cobra_assault` repo.
 - **Support URL** — `support.html` → use `https://cobraverse.net/support.html`
   as the app's Support URL (required for every App Store listing).
-- **Terms of Use** — `terms.html`. **Replace the `[STATE]` placeholder** in the
-  Governing Law section with your LLC's state of formation.
+- **Terms of Use** — `terms.html`. Governing law is Colorado. The game is
+  licensed under Apple's *standard* EULA (leave the App Store Connect "License
+  Agreement" field on the default); `terms.html` supplements it with the
+  game-specific rules (virtual items, rewarded ads, leaderboards, saves) and the
+  age policy (13+, parental consent under 18). Add a "Terms & Privacy" link in
+  the game's Settings so these pages are reachable in-app.
 - **Contact** — handled entirely through the on-site form (no email address is
   published on the page). Submissions are emailed to you via Web3Forms.
 
