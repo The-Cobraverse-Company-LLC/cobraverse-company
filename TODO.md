@@ -54,10 +54,10 @@ Both pages are the public promise — every item below keeps reality matching it
         MX -> mx/mx2/mx3.zoho.com (10/20/50), SPF "v=spf1 include:zohomail.com
         ~all", Zoho domain-verification TXT present, DKIM on the zmail selector,
         DMARC p=quarantine.
-    [ ] Send a test message to privacy@cobraverse.net from an OUTSIDE address
-        (not admin@) to confirm inbound delivery, and repeat after any deploy
-        that touches these pages. Also send one FROM privacy@ so the From
-        dropdown is confirmed working before a real request arrives.
+    [x] Tested 2026-09-05 — privacy@cobraverse.net sends and receives.
+    [ ] Re-test after any deploy that touches privacy.html / terms.html /
+        support.html, and if Zoho billing ever lapses (Mail Lite renews
+        07/26/27). These three pages promise the address works.
     No postal address or phone is published. COPPA's "name, address, telephone
     number, and email address" list (16 CFR 312.4(d)(1)) binds CHILD-DIRECTED
     services only and ours is general audience; CCPA's "two or more methods"
