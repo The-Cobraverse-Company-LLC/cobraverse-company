@@ -71,13 +71,17 @@ Both pages are the public promise — every item below keeps reality matching it
 
 --- C. BEFORE LAUNCH (this repo) ---
 9.  Counsel review of privacy.html + terms.html (README already says so).
-10.  After sign-off: remove the DRAFT callout + "Draft — " prefix in
-    privacy.html (see the LAUNCH TODO comment there) and the "The Game is
-    currently in development" line in terms.html. Bump both "Last updated".
-11.  Both pages promise a prominent notice on the page AND on the home page for
-    30 days before any MATERIAL change. There is no banner mechanism on
-    index.html yet — build a small reusable .notice snippet before you ever
-    need it, so the promise is keepable.
+10. After sign-off: remove the DRAFT callouts + "Draft — " prefixes in BOTH
+    privacy.html and terms.html (LAUNCH TODO comments mark them). Bump both
+    "Last updated". (2026-09-05: callouts now say the documents apply to the
+    websites/Etsy NOW and the game sections take effect at release — the old
+    "not yet in effect" wording left the live site with no operative policy.)
+11. DONE 2026-09-05 - notice.js + .notice CSS: site-wide banner for the 30-day
+    material-change promise (privacy §12 / terms §20). Included on index,
+    privacy, terms, support. To use: edit the SITE_NOTICE object in notice.js
+    (active, text, href, until = effective date, fresh id). Preview on any
+    page with ?notice=preview. Per-tab dismissal only (sessionStorage, no
+    cookies). README has the how-to.
 12. Commit: privacy.html, terms.html, README.md, styles.css (.summary rule is
     staged). Separate repo: laser-cobras-dotcom has my footer TERMS OF USE link
     + 12px link spacing, AND a pre-existing uncommitted cross-promo section

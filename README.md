@@ -16,6 +16,7 @@ terms.html      # Terms of Use
 support.html    # Support page (use as your App Store Support URL)
 styles.css      # all styling
 script.js       # nav, scroll animations, contact form
+notice.js       # site-wide notice banner for 30-day change notices (off by default)
 CNAME           # custom domain (cobraverse.net)
 assets/         # images (see assets/README.md for filenames)
 ```
@@ -100,6 +101,22 @@ at `cobraverse.goatcounter.com`.
 lasercobras), add a new site with the code `cobraverse`, and stats will show up
 at https://cobraverse.goatcounter.com. To instead share the existing site's
 dashboard, change the code in the snippet from `cobraverse` to `lasercobras`.
+
+## Site notice banner (material-change notices)
+`privacy.html` §12 and `terms.html` §20 promise a **prominent notice on the page
+and on the home page for at least 30 days** before any material change takes
+effect. `notice.js` (included on every page) is how you keep that promise:
+
+1. Open `notice.js`, set `active: true`, write `text`, `href`, `linkText`.
+2. Set `until` to the effective date (`YYYY-MM-DD`) — post at least 30 days
+   before it. The banner hides itself after that day.
+3. Change `id` so visitors who dismissed an earlier notice see the new one.
+4. Bump "Last updated" on the changed page. When the change is live, set
+   `active: false` again.
+
+Preview without enabling: open any page with `?notice=preview`. Dismissal is
+per browser tab (`sessionStorage`) — no cookies. The bar is fixed above the
+nav; `--notice-h` in `styles.css` shifts the nav, hero, and legal pages down.
 
 ## To-do / hook up later
 - Video cards → replace placeholders with real YouTube links/embeds.

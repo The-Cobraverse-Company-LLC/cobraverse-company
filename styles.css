@@ -447,3 +447,34 @@ img { max-width: 100%; display: block; }
   * { animation: none !important; scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+
+/* ---- Site notice banner (injected by notice.js; see that file to enable) ---- */
+:root { --notice-h: 0px; }
+.notice {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 60;
+  display: flex; align-items: center; justify-content: center; gap: 1rem;
+  padding: .6rem clamp(1rem, 4vw, 2.5rem);
+  background: var(--yellow); color: #000;
+  font-size: .9rem; line-height: 1.45; letter-spacing: .3px;
+}
+.notice-text { margin: 0; text-align: center; color: #000; }
+.notice-text strong { color: #000; font-size: .75rem; letter-spacing: 2px; text-transform: uppercase; margin-right: .5rem; }
+.notice-text a { color: #000; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
+.notice-text a:hover { text-shadow: none; opacity: .75; }
+.notice-close {
+  flex: none; width: 28px; height: 28px; border-radius: 50%;
+  background: none; border: 1px solid rgba(0,0,0,.4); color: #000;
+  font-size: 1.1rem; line-height: 1; cursor: pointer;
+}
+.notice-close:hover { background: rgba(0,0,0,.12); }
+/* Everything pinned to or measured from the top of the page shifts down by the banner height. */
+.nav { top: var(--notice-h); }
+.hero { padding-top: calc(120px + var(--notice-h)); }
+.legal { padding-top: calc(130px + var(--notice-h)); }
+@media (max-width: 720px) {
+  .nav-links { top: calc(60px + var(--notice-h)); }
+  /* The closed menu hides by sliding up. The original -120% was measured from its own height, so
+     once the banner pushes `top` down the menu's bottom edge peeks out below the nav. Slide it up
+     by its full height PLUS the offset so the bottom edge always lands above the viewport. */
+  .nav-links:not(.open) { transform: translateY(calc(-100% - 70px - var(--notice-h))); }
+}
