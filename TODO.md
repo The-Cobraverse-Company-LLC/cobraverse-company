@@ -23,9 +23,11 @@ Both pages are the public promise — every item below keeps reality matching it
 6.  DECIDE - Fan content / streaming permitted incl. platform monetization
     (YouTube/Twitch ads), no selling products with the IP (terms.html §11).
     Standard indie stance. Tighten if you want approval-only.
-7.  DECIDE - terms.html §5 promises we won't "deliberately remove an item you
-    paid for without providing a comparable replacement." Player-friendly, but
-    binding on future cosmetic retirements. Keep or soften.
+7.  DONE 2026-09-05 - terms.html §5 now uses the industry-standard clause: we
+    may modify/replace/retire Virtual Items at any time, reasonable notice where
+    practical, no ownership interest, no compensation (except where law
+    provides). The earlier "comparable replacement" promise was removed — it
+    had no game-shutdown carve-out.
 
 --- B. CONTACT INFO GAP (COPPA 16 CFR 312.4(d)(1): name, ADDRESS, PHONE, EMAIL) ---
 8.  Site publishes only the company name (email removed in 455db8a). COPPA's
