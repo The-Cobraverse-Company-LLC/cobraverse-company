@@ -46,28 +46,28 @@ Both pages are the public promise — every item below keeps reality matching it
     had no game-shutdown carve-out.
 
 --- B. CONTACT INFO GAP (COPPA 16 CFR 312.4(d)(1): name, ADDRESS, PHONE, EMAIL) ---
-8.  Site publishes only the company name (email removed in 455db8a). COPPA's
-    notice rule (16 CFR 312.4(d)(1)) lists name, address, phone, email — but
-    it only binds a child-directed service, and ours is general audience, so
-    this is OPTIONAL belt-and-suspenders. A street address is NOT needed:
-    the only thing that required one was Apple's EU trader disclosure, and
-    EU/EEA/UK/CH are excluded at launch (decided 2026-09-05, see item 18).
-    If you want the COPPA notice complete anyway, the cheap set is:
-      - Address: a PO Box, or the registered agent's address IF it is a
-        commercial agent that forwards general mail (not your home).
-      - Email: privacy@cobraverse.net alias forwarding to the real inbox.
-        GitHub Pages does no mail — set up forwarding where DNS lives
-        (Cloudflare Email Routing is free; most registrars forward for free).
-      - Phone: Google Voice / VoIP number to voicemail.
-    Slots into privacy.html §1 + §13 and terms.html §1 + §23. Also update
-    support.html "Company information".
-    IF EU IS EVER ADDED: Apple's DSA trader-status rule (since 2025-02-17)
-    publishes the developer's address, phone, and email on the EU App Store
-    page; a PO Box may be rejected there — that is when a virtual mailbox
-    (iPostal1, Anytime Mailbox, PostScan, Earth Class Mail, UPS Store box;
-    ~$10-30/mo; notarized USPS Form 1583; real street address, mail scanned
-    to a dashboard; NOT valid as the CO registered-agent address) earns its
-    keep. Trader info must be verified before the app can go live in the EU.
+8.  CLOSED 2026-09-05 - No published address / phone / email needed. The site
+    already has a working contact form (index.html#contact, Web3Forms, key
+    set, honeypot on), and every legal page routes requests to it. COPPA's
+    "name, address, telephone number, and email address" list (16 CFR
+    312.4(d)(1)) binds CHILD-DIRECTED services only, and ours is general
+    audience; CCPA's "two or more methods" rule applies to businesses over
+    $25M revenue / 100k consumers, not us. A street address was only ever
+    driven by Apple's EU trader disclosure, and EU/EEA/UK/CH are excluded
+    (item 18). Nothing to do.
+    REOPEN ONLY IF: (a) counsel says the game reads as child-directed, or
+    (b) the EU is added later — then Apple publishes address/phone/email on
+    EU store pages and a PO Box may be rejected, so a virtual mailbox
+    (iPostal1, Anytime Mailbox, PostScan, UPS Store; ~$10-30/mo; notarized
+    USPS Form 1583; NOT valid as the CO registered-agent address) plus a
+    privacy@cobraverse.net forwarder is the cheap path.
+    [ ] OPERATIONAL (do this regardless): the contact form is now the SINGLE
+        channel for support, privacy/deletion requests, and parent inquiries,
+        and it depends on a free third party. Send yourself a test submission
+        after any deploy that touches index.html, and again quarterly. If
+        Web3Forms ever fails silently the published policy promises a channel
+        that does not work. Consider a backup (Formspree endpoint is already
+        supported by script.js — see README).
 
 --- C. BEFORE LAUNCH (this repo) ---
 9.  Counsel review of privacy.html + terms.html (README already says so).
