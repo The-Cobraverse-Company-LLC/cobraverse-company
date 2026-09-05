@@ -50,15 +50,14 @@ Both pages are the public promise — every item below keeps reality matching it
     form on privacy.html (summary bullet, §9 parents, §13), terms.html §23,
     and support.html (callout + Company information). Company name + "Colorado,
     United States" now appear in all three contact blocks.
-    [ ] CREATE THE ALIAS IN ZOHO (nothing works until this exists): Zoho Mail
-        Admin Console > Users > (your user) > Mailbox Settings > Email Alias >
-        Add > username "privacy", domain cobraverse.net. It is an ALIAS on the
-        existing admin@ mailbox, NOT a new user — the Mail Lite plan's 1 used /
-        0 available license count is users, not addresses, so it costs nothing.
-        Do NOT tick "set as Mailbox Address" (that renames the primary address).
-        It will show in the From dropdown so you can reply as privacy@.
-    [ ] Send a test message to privacy@cobraverse.net once created, and again
-        after any deploy that touches these pages.
+    [x] Alias created in Zoho 2026-09-05. Domain mail is verified healthy:
+        MX -> mx/mx2/mx3.zoho.com (10/20/50), SPF "v=spf1 include:zohomail.com
+        ~all", Zoho domain-verification TXT present, DKIM on the zmail selector,
+        DMARC p=quarantine.
+    [ ] Send a test message to privacy@cobraverse.net from an OUTSIDE address
+        (not admin@) to confirm inbound delivery, and repeat after any deploy
+        that touches these pages. Also send one FROM privacy@ so the From
+        dropdown is confirmed working before a real request arrives.
     No postal address or phone is published. COPPA's "name, address, telephone
     number, and email address" list (16 CFR 312.4(d)(1)) binds CHILD-DIRECTED
     services only and ours is general audience; CCPA's "two or more methods"
