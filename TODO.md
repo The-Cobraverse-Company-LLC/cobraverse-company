@@ -1,6 +1,6 @@
 1.  DONE - make the capcha work (claude code said something, but i don't recall what it was i had to set up)
 2.  Esty store link to privacy policy anchor in privacy.html
-3.  
+3.  Do the Apple leaderboards cause any additional changes?
 
 ========================================================================
 LEGAL PAGES — privacy.html + terms.html (rewritten 2026-09-04/05)
@@ -97,15 +97,15 @@ Both pages are the public promise — every item below keeps reality matching it
     to support.html's top nav (it had Privacy only).
 
 --- D. APP STORE CONNECT (must agree with the pages) ---
-14. License Agreement: leave on Apple's STANDARD EULA. Do NOT upload a custom
+14. DONE - License Agreement: leave on Apple's STANDARD EULA. Do NOT upload a custom
     one — terms.html §4 is written to supplement the standard EULA.
-15. Age rating: answer the (post-Jan-31-2026) questionnaire honestly —
+15. DONE - Age rating: answer the (post-Jan-31-2026) questionnaire honestly —
     frequent cartoon/fantasy violence + frequent guns/weapons calculates to
     13+ (9+ if judged infrequent). Do NOT use "Override to Higher Age Rating"
     and do NOT select "Made for Kids". Answer Advertising capability = yes.
     (An 18+ minimum age in the Terms would have FORCED an 18+ override — that
     is the reason the 18+ posture was dropped.)
-16. Privacy Policy URL: https://cobraverse.net/privacy.html (store-listing.md
+16. DONE - Privacy Policy URL: https://cobraverse.net/privacy.html (store-listing.md
     still has it prefixed "DRAFT:"). Terms have no ASC field under the
     standard EULA — link terms.html from the app description or support page.
 17. App Privacy nutrition labels: "Data Used to Track You" = EMPTY; ad SDK data
@@ -165,8 +165,25 @@ Both pages are the public promise — every item below keeps reality matching it
     Etsy messages with you, and that you pass name/address/items to Printify.
     Confirm that matches what you actually see and send. (It deliberately
     does NOT claim you receive buyer email addresses.)
-28. Retention line says order records are kept "generally up to seven years"
-    for tax/accounting — align with your actual bookkeeping.
+28. DONE 2026-09-05 - §7 retention line rewritten to match reality. Verified
+    against an actual monthly statement (etsy_statement_2026_5): the columns are
+    Date / Type / Title / Info / Currency / Amount / Fees & Taxes / Net / Tax
+    Details, and buyers appear ONLY as an order number — no names, no addresses,
+    no buyer card data. (The "Visa ending in ####" row is OUR card paying Etsy
+    fees.) So the policy now says: buyer name/address live in Etsy's and
+    Printify's systems under their policies, we view them via the seller account
+    and keep NO separate copy; our own records are Etsy's monthly financial
+    statements, kept at least 3 years (IRS standard period of limitations — the
+    old "up to seven years" was the bad-debt/worthless-securities case, and
+    claimed we hold buyer PII that long, which we do not).
+    [ ] KEEP IT TRUE: for taxes, download Shop Manager > Finances > Monthly
+        statements (or Payment account for a full year) — NOT Settings >
+        Options > Download Data > Orders. The Orders CSV contains buyer names
+        and full shipping addresses; saving one makes us the holder of that
+        data and breaks the "no separate copy" statement. Pull one only for a
+        specific task (label reprint, lost package, dispute) and delete it when
+        done. If that ever changes, §7 must change with it.
+        NOTE: the 1099-K threshold drops to $600 for tax year 2026.
 
 --- G. ONGOING OBLIGATIONS THE PAGES CREATE ---
 29. State App Store Accountability Acts: Texas in effect (Fifth Circuit stayed
