@@ -12,10 +12,22 @@ app; terms.html supplements it. No arbitration clause. Fan content/streaming OK.
 Both pages are the public promise — every item below keeps reality matching it.
 
 --- A. DECISIONS TO CONFIRM (each is a sentence or two to strip if "no") ---
-4.  DECIDE - Ad content rating "G". privacy.html §2 + summary + terms.html §6
-    promise general-audience-rated ad content. Costs one line in the game
-    (AdMob requestConfiguration.maxAdContentRating = .general) and some fill.
-    Keep the promise AND add the config line, or strip the promise. Not both.
+4.  DECIDED 2026-09-05 (PROVISIONAL) - Ad content cap = PG ("parental
+    guidance"), not G. Pages now say: non-personalized + capped at a parental-
+    guidance content rating; no teen/mature ad content (alcohol, gambling,
+    sexual content, weapons, scary imagery). Cartoon game ads still allowed —
+    G would have excluded most rewarded-video game inventory (other games).
+    HOW: AdMob console > app > App settings > Ad content rating = PG
+    (changeable without a release), and/or in the game
+    requestConfiguration.maxAdContentRating = .parentalGuidance; Google
+    applies the stricter of the two.
+    [ ] REVISIT ONCE THE ADMOB ACCOUNT EXISTS: look at the real content-rating
+        and Blocking-controls UI; block sensitive categories outright
+        (gambling & betting, dating, alcohol, politics, religion, get-rich-
+        quick, sexual & reproductive health, etc. — free at any rating); then
+        decide G vs PG for real. If the cap changes, privacy.html summary +
+        §2/§3/§9 and terms.html §6 must change with it (30-day notice if the
+        game is live).
 5.  DECIDE - No arbitration clause (terms.html §21: Colorado courts, 30-day
     informal resolution first, individual claims where permitted). Reasoning:
     arbitration means the business pays AAA/JAMS fees and needs an opt-out
