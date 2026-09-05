@@ -86,10 +86,11 @@ Both pages are the public promise — every item below keeps reality matching it
     (active, text, href, until = effective date, fresh id). Preview on any
     page with ?notice=preview. Per-tab dismissal only (sessionStorage, no
     cookies). README has the how-to.
-12. Commit: privacy.html, terms.html, README.md, styles.css (.summary rule is
-    staged). Separate repo: laser-cobras-dotcom has my footer TERMS OF USE link
-    + 12px link spacing, AND a pre-existing uncommitted cross-promo section
-    (.cobraverse-plug) that predates this work — commit both there.
+12. DONE 2026-09-05 - All three repos committed (cobraverse-company,
+    laser-cobras-dotcom, laser_cobra_assault), incl. the lasercobras footer
+    TERMS OF USE link, link spacing, and the pre-existing .cobraverse-plug
+    section. NOT PUSHED YET — pushing cobraverse-company publishes the pages
+    live via GitHub Pages. Both carry DRAFT callouts, so that is safe.
 13. DONE 2026-09-05 - Support URL = https://cobraverse.net/support.html (the
     purpose-built page, not /#contact). store-listing.md updated in the game
     repo; README already said support.html. Also added the missing Terms link
@@ -150,8 +151,11 @@ Both pages are the public promise — every item below keeps reality matching it
     so the clause is actionable.
 24. terms.html §5 references "Restore Purchases in the Game's cosmetics
     screen" — the RESTORE button exists in CosmeticsOverlay; keep the label.
-25. Update the game repo's TODO.md privacy checklist to reference terms.html
-    and the 13+ posture (it currently only tracks the privacy policy).
+25. DONE 2026-09-05 - Game repo TODO.md ship checklist now has AVAILABILITY
+    and AUDIENCE items, privacy deliverables expanded 3 -> 4 (deliverable 4 =
+    hosted TERMS OF USE), and the PG ad-content cap. AdManager.swift header and
+    marketing/store-listing.md updated to match. (Commits a6da290, 8feaf06,
+    19c89b1 in laser_cobra_assault.)
 
 --- F. ETSY / MERCH ---
 26. Paste a short privacy note into the Etsy shop's Shop Policies linking to
