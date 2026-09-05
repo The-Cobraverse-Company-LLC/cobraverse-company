@@ -91,9 +91,10 @@ Both pages are the public promise — every item below keeps reality matching it
     staged). Separate repo: laser-cobras-dotcom has my footer TERMS OF USE link
     + 12px link spacing, AND a pre-existing uncommitted cross-promo section
     (.cobraverse-plug) that predates this work — commit both there.
-13. store-listing.md says Support URL = cobraverse.net/#contact; README says
-    support.html. Pick one (support.html is the purpose-built page). Also add a
-    Terms link to support.html's top nav (it has Privacy but not Terms).
+13. DONE 2026-09-05 - Support URL = https://cobraverse.net/support.html (the
+    purpose-built page, not /#contact). store-listing.md updated in the game
+    repo; README already said support.html. Also added the missing Terms link
+    to support.html's top nav (it had Privacy only).
 
 --- D. APP STORE CONNECT (must agree with the pages) ---
 14. License Agreement: leave on Apple's STANDARD EULA. Do NOT upload a custom
