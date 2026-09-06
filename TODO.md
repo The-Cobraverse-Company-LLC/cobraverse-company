@@ -17,10 +17,23 @@ Both pages are the public promise — every item below keeps reality matching it
     guidance content rating; no teen/mature ad content (alcohol, gambling,
     sexual content, weapons, scary imagery). Cartoon game ads still allowed —
     G would have excluded most rewarded-video game inventory (other games).
-    HOW: AdMob console > app > App settings > Ad content rating = PG
-    (changeable without a release), and/or in the game
-    requestConfiguration.maxAdContentRating = .parentalGuidance; Google
-    applies the stricter of the two.
+    HOW: AdMob console > (account or app) > Blocking controls > Manage ad
+    content rating = PG (changeable without a release). CAUTION: a per-request
+    SDK rating does NOT combine with that setting — Google's docs say it
+    OVERRIDES the UI value. So either set it ONLY in the console and never call
+    maxAdContentRating in code, or set BOTH to .parentalGuidance and keep them
+    equal. A mismatch silently wins for the SDK value.
+    Definitions: G = all audiences; PG = most audiences w/ parental guidance
+    (non-realistic cartoonish violence); T = teen+ (general health, social
+    networks, scary imagery, fight sports); MA = alcohol, gambling, sexual
+    content, weapons. Ratings are cumulative — PG also allows G.
+    PG vs T settled 2026-09-06: T adds exactly what a parent would object to,
+    and PG already permits the cartoon-violence creatives that make up most
+    mobile-game rewarded inventory. AdMob shows an estimated impressions/revenue
+    impact (trailing 30 days) when you change the setting, so revisit with real
+    data after launch — but by then loosening it is a material change to "how
+    advertising works in our games" and triggers the 30-day notice in privacy
+    §12 / terms §20.
     [ ] REVISIT ONCE THE ADMOB ACCOUNT EXISTS: look at the real content-rating
         and Blocking-controls UI; block sensitive categories outright
         (gambling & betting, dating, alcohol, politics, religion, get-rich-
