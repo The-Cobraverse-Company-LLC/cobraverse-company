@@ -17,6 +17,7 @@ support.html    # Support page (use as your App Store Support URL)
 styles.css      # all styling
 script.js       # nav, scroll animations, contact form
 notice.js       # site-wide notice banner for 30-day change notices (off by default)
+etsy-shop-privacy.md  # privacy text to paste into Etsy Shop Policies (keep in sync with privacy.html)
 CNAME           # custom domain (cobraverse.net)
 assets/         # images (see assets/README.md for filenames)
 ```

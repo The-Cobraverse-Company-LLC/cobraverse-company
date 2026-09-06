@@ -158,9 +158,12 @@ Both pages are the public promise — every item below keeps reality matching it
     19c89b1 in laser_cobra_assault.)
 
 --- F. ETSY / MERCH ---
-26. Paste a short privacy note into the Etsy shop's Shop Policies linking to
-    cobraverse.net/privacy.html#merchandise (ties to item 2 above; Etsy asks
-    every seller to have one, required if you sell to the EU).
+26. DRAFTED 2026-09-05 - text is in etsy-shop-privacy.md (repo root). It makes
+    the same three claims as privacy.html: Etsy sends order data to Printify
+    directly, we keep no separate copy of buyer data, and our tax records are
+    Etsy's monthly financial statements (no buyer identity) kept 3+ years.
+    [ ] Paste the marked block into Etsy Shop Manager > Settings > Policies >
+        Privacy. Keep the two documents in sync if either changes.
 27. DONE 2026-09-05 - Corrected. We do NOT forward anything to Printify: the
     Etsy shop is connected to Printify, so Etsy sends name/shipping address/item
     details straight to Printify. §2 "Merchandise orders" now says that transfer
