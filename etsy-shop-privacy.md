@@ -1,9 +1,9 @@
 # Etsy shop policies — privacy section
 
 Paste the block below into **Etsy Shop Manager → Settings → Policies → Privacy**
-(the free-text privacy area of Shop Policies). Etsy asks every seller to have one
-and requires it if you sell to buyers in the EU/UK, where you are an independent
-data controller for the buyer information you can see.
+(the free-text privacy area of Shop Policies). Etsy asks every seller to have
+one; as the seller you are an independent data controller for the buyer
+information you can see, separate from Etsy's own policy.
 
 **Keep this in sync with `privacy.html`.** It makes the same three factual claims
 the site policy makes, and they have to stay true together:
@@ -29,7 +29,7 @@ privacy policy is at https://cobraverse.net/privacy.html
 address, the items you ordered, and any messages you send me through Etsy. Etsy
 processes your payment — I never receive or store your card details.
 
-**Why I need it.** To fulfil your order, to answer your questions about it, and
+**Why I need it.** To fulfill your order, to answer your questions about it, and
 to keep the financial records that tax law requires.
 
 **Who else sees it.** This shop is connected to Printify, my print-on-demand
@@ -45,17 +45,18 @@ records I keep Etsy's monthly financial statements, which show order numbers,
 item titles, and amounts — not buyer names or addresses — for at least three
 years.
 
-**International transfers.** I am based in the United States, and Etsy and
-Printify process information in the United States and other countries. They rely
-on recognised safeguards for those transfers, such as the EU Standard
-Contractual Clauses.
+**Where it is processed.** I am based in the United States. Etsy and Printify
+are international companies and may process your information in the United
+States and in other countries, including through the print provider that makes
+your item. They are responsible for safeguarding those transfers under their own
+privacy policies.
 
 **Your rights.** You can ask me to access, correct, or delete the personal
-information I hold about you, or to restrict how it is used. Because your order
-information is held in Etsy's systems rather than mine, some requests are
-fastest through Etsy directly — message me and I will point you the right way.
-If you are in the EEA or the UK, you may also complain to your local data
-protection authority.
+information I hold about you, or to restrict how it is used, and I will not
+treat you differently for asking. Because your order information is held in
+Etsy's systems rather than mine, some requests are fastest through Etsy
+directly — message me and I will point you the right way. Depending on where you
+live, you may have additional rights under your local privacy laws.
 
 **Contact.** privacy@cobraverse.net
 
@@ -65,14 +66,21 @@ protection authority.
 
 ## Notes
 
+- **US English**, and no EU/UK-specific framing — decided 2026-09-05 on the
+  basis that the shop does not sell to the EU/UK. Confirm that Etsy shipping
+  profiles actually exclude those countries; an Etsy shop reaches buyers
+  anywhere it ships. If an EU/UK buyer can still order, add back: the EU
+  Standard Contractual Clauses as the transfer safeguard, and the right to
+  complain to a local data protection authority. (`privacy.html` keeps its
+  GDPR references either way — the websites are reachable worldwide.)
+- The "where it is processed" paragraph stays regardless of who buys: Printify
+  is headquartered outside the US and routes orders to print providers in
+  several countries, so buyer data crosses borders even on a US-only sale.
 - Etsy's structured Shop Policies also cover Shipping and Returns & exchanges
-  separately — this text is only the privacy portion. Physical-goods returns for
-  print-on-demand are usually limited to damaged/misprinted items; that belongs
-  in the Returns section, not here, and `terms.html` §13 already defers to
-  whatever the shop policies say.
-- British spellings ("fulfil", "recognised") are deliberate — Etsy's buyer base
-  for this text skews EU/UK. Change to US spelling if you prefer consistency
-  with the site.
+  separately — this text is only the privacy portion. Print-on-demand returns
+  are usually limited to damaged or misprinted items; that belongs in the
+  Returns section, and `terms.html` §13 already defers to whatever the shop
+  policies say.
 - No postal address is published here, matching the site. Etsy separately
-  requires a business address on file for the EU Digital Services Act trader
-  disclosure; that lives in Etsy's own settings, not in this text.
+  requires a business address on file for its own trader disclosure; that lives
+  in Etsy's settings, not in this text.
