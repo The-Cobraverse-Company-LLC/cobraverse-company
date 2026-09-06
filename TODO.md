@@ -161,10 +161,12 @@ Both pages are the public promise — every item below keeps reality matching it
 26. Paste a short privacy note into the Etsy shop's Shop Policies linking to
     cobraverse.net/privacy.html#merchandise (ties to item 2 above; Etsy asks
     every seller to have one, required if you sell to the EU).
-27. privacy.html states Etsy shares name, shipping address, items ordered, and
-    Etsy messages with you, and that you pass name/address/items to Printify.
-    Confirm that matches what you actually see and send. (It deliberately
-    does NOT claim you receive buyer email addresses.)
+27. DONE 2026-09-05 - Corrected. We do NOT forward anything to Printify: the
+    Etsy shop is connected to Printify, so Etsy sends name/shipping address/item
+    details straight to Printify. §2 "Merchandise orders" now says that transfer
+    happens between those two services and we neither handle nor forward it; the
+    §3 Printify bullet says "directly from Etsy through our connected shop."
+    Still deliberately does NOT claim we receive buyer email addresses.
 28. DONE 2026-09-05 - §7 retention line rewritten to match reality. Verified
     against an actual monthly statement (etsy_statement_2026_5): the columns are
     Date / Type / Title / Info / Currency / Amount / Fees & Taxes / Net / Tax
