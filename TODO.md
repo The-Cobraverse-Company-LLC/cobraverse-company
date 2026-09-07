@@ -12,35 +12,51 @@ app; terms.html supplements it. No arbitration clause. Fan content/streaming OK.
 Both pages are the public promise — every item below keeps reality matching it.
 
 --- A. DECISIONS TO CONFIRM (each is a sentence or two to strip if "no") ---
-4.  DECIDED 2026-09-05 (PROVISIONAL) - Ad content cap = PG ("parental
-    guidance"), not G. Pages now say: non-personalized + capped at a parental-
-    guidance content rating; no teen/mature ad content (alcohol, gambling,
-    sexual content, weapons, scary imagery). Cartoon game ads still allowed —
-    G would have excluded most rewarded-video game inventory (other games).
-    HOW: AdMob console > (account or app) > Blocking controls > Manage ad
-    content rating = PG (changeable without a release). CAUTION: a per-request
-    SDK rating does NOT combine with that setting — Google's docs say it
-    OVERRIDES the UI value. So either set it ONLY in the console and never call
-    maxAdContentRating in code, or set BOTH to .parentalGuidance and keep them
-    equal. A mismatch silently wins for the SDK value.
+4.  CHANGED TO TEEN 2026-09-07 (PROVISIONAL — pending attorney review of ad
+    content). Pages now say ads are capped at Google's "teen" (T) content
+    rating: mature content still blocked (alcohol, gambling, sexual content,
+    weapons), but teen-rated content IS allowed, which can include scary
+    imagery, fight sports, general health, and social networks.
+    Changed in 5 places — privacy.html summary bullet, §2 "Ad content", §3
+    AdMob bullet, §9 children's bullet, and terms.html §6. They must always
+    say the same tier; a document that says PG in one place and T in another
+    is worse than either.
+    WHAT THE CHANGE COST: §2 previously said ad content was "suitable for
+    younger players who may be watching" — that claim is GONE, because it is
+    not true at T. §9's argument is "we built it as if a child might be
+    playing," and the ad cap is one of its five listed protections; at T that
+    bullet is weaker (it now only promises no mature-rated advertising).
+    >> FOR THE ATTORNEY: is a T cap defensible given §9 concedes the cartoon
+       art may appeal to under-13s? The tension is between that concession and
+       allowing scary-imagery/fight-sports creatives. G/PG/T/MA are cumulative;
+       PG (the 2026-09-05 position) blocks teen content, G blocks everything
+       but all-audience content. Reverting is a 5-place edit.
+    HOW TO SET IT: AdMob console > (account or app) > Blocking controls >
+    Manage ad content rating (changeable without a release). CAUTION: a
+    per-request SDK maxAdContentRating does NOT combine with the console value
+    — Google's docs say it OVERRIDES it. So either set it ONLY in the console
+    and never call maxAdContentRating in code, or set BOTH and keep them equal.
     Definitions: G = all audiences; PG = most audiences w/ parental guidance
     (non-realistic cartoonish violence); T = teen+ (general health, social
     networks, scary imagery, fight sports); MA = alcohol, gambling, sexual
-    content, weapons. Ratings are cumulative — PG also allows G.
-    PG vs T settled 2026-09-06: T adds exactly what a parent would object to,
-    and PG already permits the cartoon-violence creatives that make up most
-    mobile-game rewarded inventory. AdMob shows an estimated impressions/revenue
-    impact (trailing 30 days) when you change the setting, so revisit with real
-    data after launch — but by then loosening it is a material change to "how
-    advertising works in our games" and triggers the 30-day notice in privacy
-    §12 / terms §20.
-    [ ] REVISIT ONCE THE ADMOB ACCOUNT EXISTS: look at the real content-rating
-        and Blocking-controls UI; block sensitive categories outright
-        (gambling & betting, dating, alcohol, politics, religion, get-rich-
-        quick, sexual & reproductive health, etc. — free at any rating); then
-        decide G vs PG for real. If the cap changes, privacy.html summary +
-        §2/§3/§9 and terms.html §6 must change with it (30-day notice if the
-        game is live).
+    content, weapons. Cumulative — T also allows G and PG.
+    COMPARABLES (checked 2026-09-06, live App Store listings): the ad content
+    rating is NOT publicly observable for any app, but the surrounding posture
+    is. Sky Force Reloaded (Infinite Dreams) is 9+ / "Infrequent Cartoon or
+    Fantasy Violence" and tracks Location + Identifiers + Usage Data; Galaxy
+    Attack: Alien Shooter (DINO GAME) is 9+ and tracks Identifiers + Usage Data
+    + Diagnostics. Both run full cross-app tracking in a 9+ game, so neither is
+    likely restricting ad content either.
+    [ ] Blocking controls: block sensitive categories outright regardless of
+        tier (gambling & betting, dating, alcohol, get-rich-quick, sexual &
+        reproductive health, politics, religion). Free, independent of the
+        rating cap, catches things by category that a tier lets through.
+    [ ] After ~30 days live, AdMob shows an estimated impressions/revenue
+        impact when you change the tier — use real data to settle T vs PG.
+        NOTE: once the game is live, changing the tier is a material change to
+        "how advertising works in our games" and triggers the 30-day notice in
+        privacy §12 / terms §20. Right now the game is unreleased and no ads
+        are being served, so this change owes no notice.
 5.  DONE 2026-09-05 - No arbitration clause, confirmed. terms.html §21 stays:
     Colorado law, state/federal courts in Colorado, 30-day informal resolution
     first, individual (non-class) claims where the law permits, EU/UK consumer
