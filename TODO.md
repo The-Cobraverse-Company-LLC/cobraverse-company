@@ -1,13 +1,17 @@
 1.  DONE - make the capcha work (claude code said something, but i don't recall what it was i had to set up)
 2.  Esty store link to privacy policy anchor in privacy.html
 3.  Do the Apple leaderboards cause any additional changes?
+4.  Admob setup
+5.  index.html's nav has no Merch link, README's to-do still lists the "Notify Me" swap that's now done.
 
+✻ Brewed for 21s · done 10:19 PM
 ========================================================================
 LEGAL PAGES — privacy.html + terms.html (rewritten 2026-09-04/05)
 ========================================================================
 Posture decided 2026-09-04: GENERAL AUDIENCE, 13+ (not 18+). Not child-directed,
 not Kids Category, no store-rating override. Non-personalized ("non-targeted")
-ads rated for general audiences, for every player. Apple STANDARD EULA for the
+ads capped at Google's "teen" (T) content rating as of 2026-09-07 (was PG; see
+item 4 — provisional pending attorney review), for every player. Apple STANDARD EULA for the
 app; terms.html supplements it. No arbitration clause. Fan content/streaming OK.
 Both pages are the public promise — every item below keeps reality matching it.
 
@@ -241,3 +245,88 @@ Both pages are the public promise — every item below keeps reality matching it
     If UGC (chat, sharing, uploads) is ever added, register an agent with the
     Copyright Office AND rewrite privacy.html §9 (the no-UGC claim is one of
     the child-safety protections).
+
+
+--- H. REGULATIONS IN SCOPE (map for the attorney briefing, 2026-09-09) ---
+Not legal advice — orientation. The useful split is NOT federal vs state, it is
+"has a size threshold we are under" vs "binds us regardless of size."
+
+35. BINDS US REGARDLESS OF SIZE — the short list that actually matters:
+    a) FTC Act Sec. 5 (deception). The master rule: every claim in privacy.html,
+       terms.html, the Etsy shop policy, and the App Store listing must be TRUE.
+       This is why items 27 and 28 mattered — the old "up to seven years" line
+       and the old "we pass your data to Printify" line were both Sec. 5
+       exposure, not privacy-law exposure.
+    b) COLORADO SB 24-041 (CPA minors amendment, effective 2025-10-01).
+       *** Applies REGARDLESS of the CPA's normal thresholds. *** Reaches any
+       controller offering an online service to Colorado consumers it "knows or
+       WILLFULLY DISREGARDS" are minors (under 18). Requires a data protection
+       impact assessment where there is heightened risk to minors, and consent
+       before features designed to increase use. This is our home state and the
+       most likely binding privacy law. See item 37.
+    c) CALIFORNIA AB 2426 (digital goods, effective 2025-01-01). No size
+       threshold. Bars advertising digital goods with "buy"/"purchase" language
+       implying ownership unless you disclose it is a LICENSE, list the
+       restrictions, and state it can be revoked. Up to $2,500 per violation
+       plus Unfair Competition Law class-action exposure. See item 38.
+    d) STATE APP STORE ACCOUNTABILITY ACTS — developer duties apply to all
+       developers regardless of size. Texas in effect; Alabama 2027-01-01,
+       Utah 2027-05-06, Louisiana 2027-07-01. Detail in item 29.
+
+36. DOES NOT APPLY ON CURRENT FACTS (but shapes the design, and re-check if the
+    business grows):
+    - COPPA (16 CFR 312) — binds child-directed services or those with ACTUAL
+      KNOWLEDGE of under-13 users. We are general audience, so it does not bind
+      directly; we built to it anyway. Amended rule compliance date 2026-04-22.
+    - Colorado Privacy Act, baseline — needs 100,000 CO consumers, or 25,000
+      plus revenue from selling data. Far under. (The MINORS half above is
+      separate and DOES apply — do not conflate them.)
+    - CCPA/CPRA — needs $26,625,000 revenue (2026 inflation-adjusted figure),
+      or 100,000 consumers, or 50% of revenue from selling/sharing data. Far
+      under on all three, and we sell nothing. NOTE: the regs effective
+      2026-01-01 add activity-based triggers for high-risk processing
+      (selling/sharing, sensitive PI, automated decision-making) — none of
+      which we do, but that is the thing that could pull a small business in.
+    - ~20 other state comprehensive privacy laws — same threshold shape.
+    - California AADC — PARTIALLY ENJOINED and in flux. Ninth Circuit narrowed
+      the injunction 2026-03-12: data-use restrictions and the dark-patterns ban
+      stay blocked as unconstitutionally vague; the age-estimation provision and
+      severability went back to the district court. Watch, do not build to it.
+    - GDPR / UK GDPR — game excludes EEA/UK/CH (item 18). The WEBSITES and the
+      Etsy shop are still reachable from Europe, which is why privacy.html keeps
+      its GDPR references and etsy-shop-privacy.md does not.
+
+37. >> FOR THE ATTORNEY #1 — Colorado SB 24-041 vs. our own §9 candor.
+    privacy.html §9 states the cartoon art "may appeal to children younger than
+    13" and that the game has no way to verify a player's age. That candor is
+    good under FTC Sec. 5. But "willfully disregards" is SB 24-041's trigger,
+    and we have published a paragraph acknowledging minors likely use the
+    product while running no age gate. Question: does that concession plus no
+    age gate put us inside the minors provisions (DPIA, consent for
+    engagement-increasing features)? If yes, the likely asks are a DPIA and a
+    look at whether anything in the game counts as designed to increase use
+    (daily/weekly challenges, streaks). Ties to items 4 and 15.
+
+38. >> FOR THE ATTORNEY #2 — AB 2426 and the in-game store screen.
+    terms.html §5 already carries the substance the law wants: "no ownership
+    interest," "limited, revocable license," "not your property," and that we
+    may retire items. Open question: must the license disclosure also appear on
+    the COSMETICS SCREEN itself, at the point of sale? Facts as built: the buy
+    control renders the product's price (e.g. "$1.99"), NOT the word "Buy";
+    there is a "RESTORE PURCHASES" label; and Apple runs the actual payment
+    sheet as merchant of record. So this may already be compliant, or it may
+    want one line of text on that screen. Cheap to add if counsel says so.
+
+39. CONTRACTUAL, NOT STATUTORY — enforced by account termination rather than
+    regulators, which in practice makes these the most likely to actually bite:
+    Apple App Review Guidelines §5.1 (Privacy), the Apple Developer Program
+    License Agreement, App Privacy nutrition labels, PrivacyInfo.xcprivacy, and
+    the standard EULA; Google AdMob program policies; Etsy's Seller Policy;
+    Printify's terms. Items 14-17, 20-22, 26.
+
+40. TAX / BUSINESS ADJACENT (not privacy, but same compliance calendar):
+    1099-K threshold drops to $600 for tax year 2026; Colorado Retail Delivery
+    Fee already appears on Etsy statements as a buyer-paid line; Colorado LLC
+    periodic report and registered agent must stay current; IRS record retention
+    is 3 years standard (7 only for bad-debt/worthless-securities claims) — see
+    item 28.
