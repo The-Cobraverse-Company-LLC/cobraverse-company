@@ -1,10 +1,38 @@
 1.  DONE - make the capcha work (claude code said something, but i don't recall what it was i had to set up)
 2.  Esty store link to privacy policy anchor in privacy.html
-3.  Do the Apple leaderboards cause any additional changes?
+3.  DONE 2026-09-22 - Apple leaderboards: NO changes needed to the legal pages.
+    Game Center is already covered end to end:
+      - privacy.html §2 "Game Center leaderboards (optional)" (#game-center) —
+        sign-in is controlled by the device/Apple ID and never required; we
+        submit only a NUMERIC SCORE; Apple displays the nickname + score in its
+        own UI; we receive no name, email, or Apple ID, store nothing, and
+        combine it with nothing.
+      - privacy.html §3 (Apple bullet), §7 retention ("retained by Apple under
+        Apple's policies for as long as the leaderboards exist"), §9 (parents
+        can restrict Game Center with Screen Time).
+      - terms.html §7 "Game Center, leaderboards, and fair play", the summary
+        "play fair" bullet, §2 (parental controls), and §14 (third-party
+        services we depend on but do not control).
+    The data minimization is what makes this easy: a score is an integer, so
+    there is no personal information leaving the device for us to disclose.
+    WHAT LEADERBOARDS STILL OWE (already tracked, nothing new):
+      - item 17 — ASC privacy labels: Game Center = "Linked to You" (User ID /
+        Gameplay Content) but NOT "Used to Track You". Apple's form makes this
+        easy to get wrong; linked-to-you is NOT the same as used-to-track-you,
+        and our whole posture depends on that section staying empty.
+      - item 23 — confirm ASC actually lets you delete an individual score or
+        reset a board, because terms §7 promises we may remove cheated scores.
+      - game repo blocker A3 — build once on a real device so automatic signing
+        registers the Game Center capability, then create the 5 CLASSIC
+        leaderboards in ASC with IDs matching GameCenter.swift EXACTLY.
+    >> ONE NEW ANGLE FOR COUNSEL (ties to item 37): leaderboards and the WEEKLY
+       CHALLENGE are retention mechanics — they exist to bring players back.
+       Colorado SB 24-041 requires consent before features "designed to increase
+       use" by minors, and it applies regardless of our size. Worth asking
+       whether Game Center boards and weekly/daily events fall inside that.
 4.  Admob setup
 5.  index.html's nav has no Merch link, README's to-do still lists the "Notify Me" swap that's now done.
 
-✻ Brewed for 21s · done 10:19 PM
 ========================================================================
 LEGAL PAGES — privacy.html + terms.html (rewritten 2026-09-04/05)
 ========================================================================
